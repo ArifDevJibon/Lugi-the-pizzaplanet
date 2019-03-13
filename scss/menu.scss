@@ -1,0 +1,44 @@
+@import "main.scss";
+
+ // Utility Classes
+.price {
+  font-weight: bold;
+  color: $col-primary;
+}
+.featured-menu {
+  margin-bottom: $p-xl;
+}
+.detailed-menu {
+  background-color: $col-light;
+  padding: $p-xl 0;
+}
+.new-section {
+  padding-bottom: 0;
+}
+
+  // Showcase Section
+#showcase {
+  background: url("../images/slider_3_1920_600.jpg") center center / cover;
+  height: 580px;
+
+  .container {
+    margin-top: $p-xl;
+
+    h1 {
+      margin: $p-sm;
+    }
+  }
+}
+
+  // Small screen
+@media(max-width:576px) {
+  .heading {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .new-section {
+    padding-top: $text-md;
+  }
+}
